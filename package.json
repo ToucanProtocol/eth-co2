@@ -1,0 +1,16 @@
+{
+  "name": "web3-co2",
+  "version": "0.0.1",
+  "description": "Carbon offsetting on Ethereum via web3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "carbon",
+    "co2",
+    "ethereum"
+  ],
+  "author": "Adam Spiers",
+  "license": "ISC"
+}
