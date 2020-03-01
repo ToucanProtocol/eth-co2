@@ -243,16 +243,41 @@ function getContract (provider) {
 
   // We connect to the Contract using a Provider, so we will only
   // have read-only access to the Contract
-  let contract = new ethers.Contract(contractAddress, abi, provider);
-
-  return contract;
+  return new ethers.Contract(contractAddress, abi, provider);
 }
 
 /**
  * Get current CO2ken price in DAI
  * @param provider Provider object
  */
-export async function getCO2kenPrice (provider: Provider) {
+export async function getCo2kenPrice (provider: Provider) {
   let contract = getContract(provider);
   return await contract.co2kenPrice();
+}
+
+/**
+ * Get gasEnergyFootprint
+ * @param provider Provider object
+ */
+export async function getGasEnergyFootprint (provider: Provider) {
+  let contract = getContract(provider);
+  return await contract.gasEnergyFootprint();
+}
+
+/**
+ * Get gridEmissionFactor
+ * @param provider Provider object
+ */
+export async function getGridEmissionFactor (provider: Provider) {
+  let contract = getContract(provider);
+  return await contract.gridEmissionFactor();
+}
+
+/**
+ * Get gasCarbonFootprint
+ * @param provider Provider object
+ */
+export async function getGasCarbonFootprint (provider: Provider) {
+  let contract = getContract(provider);
+  return await contract.gasCarbonFootprint();
 }
