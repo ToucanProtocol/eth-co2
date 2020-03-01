@@ -1,9 +1,9 @@
 {
-  "name": "@co2ken/web3-co2",
+  "name": "@co2ken/eth-co2",
   "version": "0.0.1",
   "description": "Carbon offsetting on Ethereum via web3",
   "author": "Adam Spiers <blockchain@adamspiers.org>",
-  "homepage": "https://github.com/CO2ken/web3-co2",
+  "homepage": "https://github.com/CO2ken/eth-co2",
   "license": "ISC",
   "keywords": [
     "carbon",
@@ -21,7 +21,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CO2ken/web3-co2.git"
+    "url": "git+https://github.com/CO2ken/eth-co2.git"
   },
   "scripts": {
     "compile": "tsc",
@@ -29,7 +29,7 @@
     "build": "npm run compile && npm run parcel"
   },
   "bugs": {
-    "url": "https://github.com/CO2ken/web3-co2/issues"
+    "url": "https://github.com/CO2ken/eth-co2/issues"
   },
   "dependencies": {
     "ethers": "^4.0.41",

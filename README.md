@@ -1,6 +1,6 @@
-# web3-co2
+# eth-co2
 
-`web3-co2.js` is a JavaScript library to enable offsetting of CO2 emissions via
+`eth-co2.js` is a JavaScript library to enable offsetting of CO2 emissions via
 the Ethereum blockchain.
 
 ## Building
@@ -17,7 +17,7 @@ For example, to calculate the cost of offsetting a flight from London to New Yor
 import "babel-polyfill";
 import { ethers } from "ethers";
 
-import { getCO2kenPrice } from "./ts/web3-co2";
+import { getCO2kenPrice } from "./ts/eth-co2";
 
 const dapp = async () => {
   let provider = new ethers.providers.Web3Provider(web3.currentProvider);
@@ -34,7 +34,7 @@ dapp().catch(e => { console.error(e) });
 ### Pay DAI to offset carbon emissions
 
 ```javascript
-import { offsetEmissions } from "@CO2ken/web3-co2";
+import { offsetEmissions } from "@CO2ken/eth-co2";
 
 offsetEmissions(web3, dai);
 
@@ -44,7 +44,7 @@ offsetEmissions(web3, dai);
 
 
 ```javascript
-import { getCO2kenPrice } from "@CO2ken/web3-co2";
+import { getCO2kenPrice } from "@CO2ken/eth-co2";
 
 let gasFootprint = await getFootprint(web3);  // CO2 emissions per gas
 ```
@@ -60,7 +60,7 @@ let offsetCost = emissions * co2kenPrice;
 ### Wrap it all up for convenience
 
 ```javascript
-import { estimateEmissions } from "@CO2ken/web3-co2";
+import { estimateEmissions } from "@CO2ken/eth-co2";
 
 let emissions = await estimateEmissions(web3, contractName, functionName);
 
