@@ -1,6 +1,6 @@
 {
   "name": "eth-co2",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Carbon offsetting on Ethereum via web3",
   "author": "Adam Spiers <blockchain@adamspiers.org>",
   "homepage": "https://github.com/CO2ken/eth-co2",
