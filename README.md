@@ -48,6 +48,15 @@ let supply = await getCo2kenSupply(provider);
 ```
 
 
+### Check total balance of payments to CO2ken contract
+
+```javascript
+import { getCo2kenPaymentsBalance } from "eth-co2";
+
+let balance = await getCo2kenPaymentsBalance(provider);
+```
+
+
 ### Pay DAI to offset carbon emissions
 
 ```javascript
