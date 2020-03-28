@@ -1,6 +1,7 @@
 import { Contract } from "ethers";
+import { Provider } from "ethers/providers";
 
-export function getTokenContract (provider) {
+export function getTokenContract (provider: Provider) {
   // CO2kenData.sol on Rinkeby
   let contractAddress = "0x6a1B0C693DD4AA99bA8E93247AA221Fb30525Cfe";
   let abi = [

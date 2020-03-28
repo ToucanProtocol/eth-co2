@@ -1,6 +1,7 @@
 import { Contract } from "ethers";
+import { Provider } from "ethers/providers";
 
-export function getStorageContract (provider) {
+export function getStorageContract (provider: Provider) {
   // CO2kenData.sol on Rinkeby
   let contractAddress = "0x127AE08f45d687dA7887ceA369F2f4D95cb9baf2";
   let abi = [
