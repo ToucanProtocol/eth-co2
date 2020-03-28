@@ -25,7 +25,7 @@ For example, to calculate the cost of offsetting a flight from London to New Yor
 import "babel-polyfill";
 import { ethers } from "ethers";
 
-import { getCO2kenPrice } from "./ts/eth-co2";
+import { getCO2kenPrice } from "eth-co2";
 
 const dapp = async () => {
   let provider = new ethers.providers.Web3Provider(web3.currentProvider);
@@ -42,7 +42,7 @@ dapp().catch(e => { console.error(e) });
 ### Pay DAI to offset carbon emissions
 
 ```javascript
-import { offsetEmissions } from "@CO2ken/eth-co2";
+import { offsetEmissions } from "eth-co2";
 
 offsetEmissions(provider, dai);
 ```
@@ -52,7 +52,7 @@ offsetEmissions(provider, dai);
 
 
 ```javascript
-import { getCO2kenPrice } from "@CO2ken/eth-co2";
+import { getFootprint } from "eth-co2";
 
 let gasFootprint = await getFootprint(provider);  // CO2 emissions per gas
 ```
@@ -69,7 +69,7 @@ let offsetCost = emissions * co2kenPrice;
 ### Wrap it all up for convenience
 
 ```javascript
-import { estimateEmissions } from "@CO2ken/eth-co2";
+import { estimateEmissions } from "eth-co2";
 
 let emissions = await estimateEmissions(provider, contractName, functionName);
 ```
