@@ -1,6 +1,6 @@
 {
   "name": "eth-co2",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Carbon offsetting on Ethereum via web3",
   "author": "Adam Spiers <blockchain@adamspiers.org>",
   "homepage": "https://github.com/CO2ken/eth-co2",
@@ -32,8 +32,8 @@
     "url": "https://github.com/CO2ken/eth-co2/issues"
   },
   "dependencies": {
-    "ethers": "^4.0.41",
-    "babel-polyfill": "^6.26.0"
+    "babel-polyfill": "^6.26.0",
+    "ethers": "^4.0.41"
   },
   "devDependencies": {
     "@types/node": "^13.5.0",
