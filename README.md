@@ -44,7 +44,7 @@ dapp().catch(e => { console.error(e) });
 ```javascript
 import { offsetEmissions } from "eth-co2";
 
-offsetEmissions(provider, dai);
+await offsetEmissions(provider, dai);
 ```
 
 
