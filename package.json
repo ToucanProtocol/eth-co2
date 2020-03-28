@@ -12,9 +12,6 @@
   ],
   "types": "dist/eth-co2.d.js",
   "main": "src/eth-co2.ts",
-  "files": [
-    "build"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CO2ken/eth-co2.git"
