@@ -13,6 +13,15 @@ export async function getCo2kenPrice (provider: Provider) {
 }
 
 /**
+ * Get current CO2ken balance (total number of tokens in supply)
+ * @param provider Provider object
+ */
+export async function getCo2kenSupply (provider: Provider) {
+  let contract = getTokenContract(provider);
+  return await contract.balance();
+}
+
+/**
  * Get gasEnergyFootprint
  * @param provider Provider object
  */

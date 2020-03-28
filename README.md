@@ -39,6 +39,15 @@ dapp().catch(e => { console.error(e) });
 ```
 
 
+### Check total supply of CO2kens
+
+```javascript
+import { getCo2kenSupply } from "eth-co2";
+
+let supply = await getCo2kenSupply(provider);
+```
+
+
 ### Pay DAI to offset carbon emissions
 
 ```javascript
