@@ -21,8 +21,7 @@
   },
   "scripts": {
     "compile": "tsc",
-    "parcel": "parcel build --public-url . src/eth-co2.ts",
-    "build": "npm run compile && npm run parcel",
+    "build": "npm run compile",
     "prepublishOnly": "npm run build"
   },
   "bugs": {
@@ -34,7 +33,6 @@
   },
   "devDependencies": {
     "@types/node": "^13.5.0",
-    "typescript": "^3.8.3",
-    "parcel-bundler": "^1.12.4"
+    "typescript": "^3.8.3"
   }
 }
