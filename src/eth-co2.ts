@@ -28,7 +28,7 @@ export async function getCo2kenSupply (provider: Provider) {
  */
 export async function getCo2kenPaymentsBalance (provider: Provider) {
   let paymentContract = getPaymentContract(provider);
-  let tokenContract = getPaymentContract(provider);
+  let tokenContract = getTokenContract(provider);
   return await paymentContract.balanceOf(tokenContract.address);
 }
 
