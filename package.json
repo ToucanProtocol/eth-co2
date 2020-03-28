@@ -11,7 +11,11 @@
     "ethereum"
   ],
   "types": "dist/eth-co2.d.js",
-  "main": "src/eth-co2.ts",
+  "main": "dist/eth-co2.js",
+  "files": [
+    "dist/",
+    "src/"
+  ],
   "directories": {
     "lib": "src"
   },
