@@ -22,7 +22,8 @@
   "scripts": {
     "compile": "tsc",
     "parcel": "parcel build --public-url . src/eth-co2.ts",
-    "build": "npm run compile && npm run parcel"
+    "build": "npm run compile && npm run parcel",
+    "prepublishOnly": "npm run build"
   },
   "bugs": {
     "url": "https://github.com/CO2ken/eth-co2/issues"
