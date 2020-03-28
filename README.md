@@ -36,8 +36,8 @@ const dapp = async () => {
 };
 
 dapp().catch(e => { console.error(e) });
-
 ```
+
 
 ### Pay DAI to offset carbon emissions
 
@@ -45,8 +45,8 @@ dapp().catch(e => { console.error(e) });
 import { offsetEmissions } from "@CO2ken/eth-co2";
 
 offsetEmissions(provider, dai);
-
 ```
+
 
 ### Obtain gas footprint
 
@@ -65,13 +65,11 @@ let emissions = gasUsed * gasFootprint;
 let offsetCost = emissions * co2kenPrice;
 ```
 
+
 ### Wrap it all up for convenience
 
 ```javascript
 import { estimateEmissions } from "@CO2ken/eth-co2";
 
 let emissions = await estimateEmissions(provider, contractName, functionName);
-
-
 ```
-
