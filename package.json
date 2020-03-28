@@ -25,7 +25,7 @@
   },
   "scripts": {
     "compile": "tsc",
-    "parcel": "parcel build --public-url . src/ts/eth-co2.ts",
+    "parcel": "parcel build --public-url . src/eth-co2.ts",
     "build": "npm run compile && npm run parcel"
   },
   "bugs": {
