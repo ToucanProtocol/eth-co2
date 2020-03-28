@@ -1,7 +1,15 @@
 # eth-co2
 
-`eth-co2.js` is a JavaScript library to enable offsetting of CO2 emissions via
-the Ethereum blockchain.
+`eth-co2.js` is a JavaScript library to enable offsetting of CO2
+emissions via the Ethereum blockchain.  It is part of the [CO2ken
+project](https://co2ken.io).  More information is available in [our
+introductory blog
+post](https://medium.com/curve-labs/co2ken-genesis-74d7a1387ea1).  You
+can also [follow us on Twitter](https://twitter.com/CO2ken_io).
+
+**N.B. This library is currently pre-alpha, and currently only usable
+on the Rinkeby network!  If you are interested in using it, please let
+us know.**
 
 ## Building
 
