@@ -36,7 +36,7 @@ dapp().catch(e => { console.error(e) });
 ```javascript
 import { offsetEmissions } from "@CO2ken/eth-co2";
 
-offsetEmissions(web3, dai);
+offsetEmissions(provider, dai);
 
 ```
 
@@ -46,7 +46,7 @@ offsetEmissions(web3, dai);
 ```javascript
 import { getCO2kenPrice } from "@CO2ken/eth-co2";
 
-let gasFootprint = await getFootprint(web3);  // CO2 emissions per gas
+let gasFootprint = await getFootprint(provider);  // CO2 emissions per gas
 ```
 
 
@@ -62,7 +62,7 @@ let offsetCost = emissions * co2kenPrice;
 ```javascript
 import { estimateEmissions } from "@CO2ken/eth-co2";
 
-let emissions = await estimateEmissions(web3, contractName, functionName);
+let emissions = await estimateEmissions(provider, contractName, functionName);
 
 
 ```
