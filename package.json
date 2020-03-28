@@ -21,8 +21,8 @@
   },
   "scripts": {
     "compile": "tsc",
-    "build": "npm run compile",
-    "prepublishOnly": "npm run build"
+    "build": "$npm_execpath run compile",
+    "prepublishOnly": "$npm_execpath run build"
   },
   "bugs": {
     "url": "https://github.com/CO2ken/eth-co2/issues"
