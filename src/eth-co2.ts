@@ -1,7 +1,7 @@
 import { Provider } from "ethers/providers";
 
-import { getTokenContract } from "./contracts/co2ken";
-import { getStorageContract } from "./contracts/co2kenData";
+import { getTokenContract } from "./contracts/rinkeby/co2ken";
+import { getStorageContract } from "./contracts/rinkeby/co2kenData";
 
 /**
  * Get current CO2ken price in DAI
