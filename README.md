@@ -42,9 +42,9 @@ dapp().catch(e => { console.error(e) });
 ### Pay DAI to offset carbon emissions
 
 ```javascript
-import { offsetEmissions } from "eth-co2";
+import { offsetCarbon } from "eth-co2";
 
-await offsetEmissions(provider, dai);
+await offsetCarbon(provider, dai);
 ```
 
 
