@@ -4,7 +4,7 @@
   "description": "Carbon offsetting on Ethereum via web3",
   "author": "Adam Spiers <blockchain@adamspiers.org>",
   "homepage": "https://github.com/CO2ken/eth-co2",
-  "license": "ISC",
+  "license": "LGPL-3.0-only",
   "keywords": [
     "carbon",
     "co2",
